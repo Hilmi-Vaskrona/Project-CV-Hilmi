@@ -6,6 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>CV Hilmi Zaki R</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.2/css/all.min.css"
         integrity="sha512-Evv84Mr4kqVGRNSgIGL/F/aIDqQb7xQ2vcrdIwxfjThSH8CSR7PBEakCr51Ck+w+/U6swU2Im1vVX0SVk9ABhg=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
@@ -15,38 +16,15 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.css"
         integrity="sha512-OTcub78R3msOCtY3Tc6FzeDJ8N9qvQn1Ph49ou13xgA9VsH9+LRxoFU6EqLhW4+PKRfU+/HReXmSZXHEkpYoOA=="
         crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <style>
-        .floating {
-            animation: float 2s ease-in-out infinite;
-        }
-
-        @keyframes float {
-            0% {
-                transform: translateY(0);
-            }
-
-            50% {
-                transform: translateY(-15px);
-            }
-
-            100% {
-                transform: translateY(0);
-            }
-        }
-
-        .hover-effect:hover {
-            background-color: #661a00;
-        }
-    </style>
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 </head>
 
-<body class="bg-[#080808] text-white">
+<body class="bg-[#080808] text-[#D3D3D3]">
 
     <header class="fixed top-0 left-0 w-full py-4 px-[12%] bg-black/30 backdrop-blur-[10px] z-50">
         <div class="flex items-center w-full">
             <!-- Logo -->
-            <a href="#home"
-                class="text-[3rem] text-white font-extrabold cursor-pointer transition duration-300 hover:scale-110">
+            <a href="#home" class="text-[3rem]  font-extrabold cursor-pointer transition duration-300 hover:scale-110">
                 Hilmi <span class="text-[#ff4500] drop-shadow-[0_0_25px_#ff4500]">Zaki R</span>
             </a>
 
@@ -60,15 +38,20 @@
                 <nav id="nav-menu" class="hidden absolute top-[100%] left-0 w-full bg-black/80 flex-col items-center gap-8 py-8
                     md:flex md:static md:flex-row md:bg-transparent md:py-0 md:gap-6">
                     <a href="#home"
-                        class="text-[1.8rem] text-white font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">Home </a>
+                        class="text-[1.8rem]  font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">Home
+                    </a>
                     <a href="#about"
-                        class="text-[1.8rem] text-white font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]"> About </a>
+                        class="text-[1.8rem]  font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">
+                        About </a>
                     <a href="#skills"
-                        class="text-[1.8rem] text-white font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]"> Skills </a>
+                        class="text-[1.8rem]  font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">
+                        Skills </a>
                     <a href="#portofolio"
-                        class="text-[1.8rem] text-white font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]"> Portofolio </a>
+                        class="text-[1.8rem]  font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">
+                        Portofolio </a>
                     <a href="#contact"
-                        class="text-[1.8rem] text-white font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]"> Contact </a>
+                        class="text-[1.8rem]  font-medium transition duration-300 border-b-2 border-transparent hover:text-[#ff4500] hover:border-[#ff4500]">
+                        Contact </a>
                 </nav>
             </div>
         </div>
@@ -77,7 +60,7 @@
     <section id="home">
         <div class="h-screen w-full bg-center bg-cover bg-[url('../img/BG4.jpg')]">
             <div
-                class="h-full w-full bg-gradient-to-b from-black/20 via-black/20 to-[#080808] via-80% backdrop-brightness-[0.62]">
+                class="h-full w-full bg-gradient-to-b from-black/20 via-black/20 to-[#080808] via-80% backdrop-brightness-[0.65]">
                 <!-- Home -->
                 <section
                     class="min-h-screen px-[12%] py-40 flex flex-col-reverse lg:flex-row items-center justify-center gap-20 lg:gap-40">
@@ -100,11 +83,7 @@
 
                         <!-- Media Social -->
                         <div class="flex gap-6 mt-6 text-4xl justify-center lg:justify-start w-full">
-                            <a href="#"
-                                class="w-[4.5rem] h-[4.5rem] flex items-center justify-center border-2 border-[#ff4500] rounded-full text-[#ff4500] transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1 hover:bg-[#ff4500] hover:text-black shadow-[0_0_25px_#ff4500]">
-                                <i class="fa-brands fa-linkedin-in"></i>
-                            </a>
-                            <a href="#"
+                            <a href="https://github.com/"
                                 class="w-[4.5rem] h-[4.5rem] flex items-center justify-center border-2 border-[#ff4500] rounded-full text-[#ff4500] transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1 hover:bg-[#ff4500] hover:text-black shadow-[0_0_25px_#ff4500]">
                                 <i class="fa-brands fa-github"></i>
                             </a>
@@ -112,7 +91,7 @@
                                 class="w-[4.5rem] h-[4.5rem] flex items-center justify-center border-2 border-[#ff4500] rounded-full text-[#ff4500] transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1 hover:bg-[#ff4500] hover:text-black shadow-[0_0_25px_#ff4500]">
                                 <i class="fa-brands fa-discord"></i>
                             </a>
-                            <a href="#"
+                            <a href="https://x.com/home"
                                 class="w-[4.5rem] h-[4.5rem] flex items-center justify-center border-2 border-[#ff4500] rounded-full text-[#ff4500] transition duration-300 ease-in-out transform hover:scale-110 hover:-translate-y-1 hover:bg-[#ff4500] hover:text-black shadow-[0_0_25px_#ff4500]">
                                 <i class="fa-brands fa-x-twitter"></i>
                             </a>
@@ -131,134 +110,248 @@
     </section>
 
     <!-- About Me -->
-    <section id="about" class="py-24 px-[12%] bg-[#080808] text-white md:mt-10">
+    <section id="about" class="py-24 px-[12%] bg-[#080808]  md:mt-10">
         <div class="max-w-6xl mx-auto text-center">
             <!-- Judul About Me -->
-            <h2
+            <h2 data-aos="fade-up"
                 class="text-6xl font-bold mt-[20px] relative inline-block after:block after:h-[6px] after:w-[200px] after:bg-[#ff4500] after:mx-auto after:mt-3 after:rounded-full">
                 About Me
             </h2>
 
             <!-- Quotes -->
-            <p class="text-3xl font-semibold text-[#ff4500] mt-11 max-w-4xl mx-auto mb-16">
+            <p data-aos="fade-up" class="text-3xl font-semibold text-[#ff4500] mt-11 max-w-4xl mx-auto mb-10">
                 "Setiap ide punya potensi besar, dan teknologi adalah alat untuk mewujudkannya menjadi sesuatu yang
                 nyata dan bermakna."
             </p>
 
             <!-- Isi About Me -->
-            <p class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-10">
+            <p data-aos="fade-right" class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-5">
                 Saya adalah murid SMK Madinatul Quran yang memilih jurusan RPL dan sedang memulai perjalanan baru
                 sebagai seorang Software Engineer. Saat ini saya berusia 16 tahun, masih di awal perjalanan, tetapi
                 selalu bersemangat untuk belajar dan berkembang.
             </p>
 
-            <p class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-7">
+            <p data-aos="fade-left" class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-5">
                 Saya mampu bekerja secara individu, berpikir kreatif, dan terus mengikuti perkembangan teknologi untuk
                 menciptakan solusi yang inovatif dan efisien.
             </p>
 
-            <p class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-7">
+            <p data-aos="fade-right" class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-5">
                 Meskipun masih dalam tahap awal karir, saya telah menguasai beberapa keterampilan yang dapat diandalkan
                 dalam dunia teknologi, seperti pemrograman, UI/UX design, dan pengembangan web.
             </p>
 
-            <p class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-7">
+            <p data-aos="fade-left" class="text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-5">
                 Bagi saya, setiap tantangan adalah peluang untuk berkembang dan menciptakan sesuatu yang lebih baik.
             </p>
         </div>
     </section>
 
     <!-- Skills -->
-    <section id="skills" class="h-screen flex items-center justify-center bg-[#080808]">
-        <div class="relative w-full h-full">
+    <section id="skills" class="min-h-screen flex flex-col items-center justify-center bg-[#080808] px-4 py-20">
+        <h2 data-aos="zoom-in"
+            class="text-6xl font-bold relative inline-block after:block after:h-[6px] after:w-[125px] after:bg-[#ff4500] after:mx-auto after:mt-3 after:rounded-full text-center w-full">
+            Skills
+        </h2>
 
-            <h2
-                class="text-6xl font-bold relative inline-block after:block after:h-[6px] after:w-[125px] after:bg-[#ff4500] after:mx-auto after:mt-3 after:rounded-full text-center w-full mt-[105px]">
-                Skills
-            </h2>
-
-            <p class="text-center text-[2rem] font-bold leading-relaxed max-w-5xl mx-auto mt-16 mb-10">
-                Di klik <span class="text-[#ff4500]">KOTAK</span> nya!
-            </p>
-
-            <div class="grid grid-cols-2 grid-rows-5 md:grid-cols-5 md:grid-rows-2 gap-6 md:gap-y-10 px-4 md:mt-48 mt-10 place-items-center">
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('HTML', '90%', 'https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg"
-                        class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">HTML</span>
+        <div class="grid grid-cols-2 md:grid-cols-5 gap-6 md:gap-10 place-items-center mt-32" data-aos="flip-left">
+            <!-- Skill Item: HTML -->
+            <div
+                class="group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/61/HTML5_logo_and_wordmark.svg" alt="HTML"
+                    class="w-28 h-28 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="90, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">90%</div>
                 </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('JavaScript', '55%', 'https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png"
-                        class="w-32 h-32 rounded-[5px]">
-                    <span class="text-white font-bold mt-2 text-xl">JavaScript</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('CSS', '85%', 'https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">CSS</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Figma', '75%', 'https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">Figma</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Tailwind', '90%', 'https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg"
-                        class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">Tailwind</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Laravel', '35%', 'https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">Laravel</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Python', '4%', 'https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg')">
-                    <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg"
-                        class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">Python</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Canva', '55%', 'https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwbTd_YqcrKt3ED_2JioHRslZyvQSJ7Ptwb0.k9awp_ldXhvqCsS38auQNzE.3mKc9U-&format=source')">
-                    <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwbTd_YqcrKt3ED_2JioHRslZyvQSJ7Ptwb0.k9awp_ldXhvqCsS38auQNzE.3mKc9U-&format=source"
-                        class="w-32 h-32 rounded-[5px]">
-                    <span class="text-white font-bold mt-2 text-xl">Canva</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('Framer', '47%', 'https://cdn.hackr.io/uploads/topics/1523426964BUP8FRPLRX.png')">
-                    <img src="https://cdn.hackr.io/uploads/topics/1523426964BUP8FRPLRX.png" class="w-32 h-32">
-                    <span class="text-white font-bold mt-2 text-xl">Framer</span>
-                </div>
-                <div class="w-[115px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] cursor-pointer floating flex flex-col items-center justify-center hover-effect"
-                    onclick="openModal('React', '1%', 'https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s')">
-                    <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSlGmKtrnxElpqw3AExKXPWWBulcwjlvDJa1Q&s"
-                        class="w-32 h-32 rounded-[5px]">
-                    <span class="text-white font-bold mt-2 text-xl">React</span>
-                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">HTML</div>
             </div>
-        </div>
 
-        <!-- Modal -->
-        <div id="modal"
-            class="fixed inset-0 bg-black bg-opacity-50 backdrop-blur-sm hidden flex items-center justify-center">
-            <div class="bg-[#080808] p-6 rounded-lg shadow-lg w-80 text-center border-2 border-[#ff4500]">
-                <img id="tech-logo" src="" alt="Logo" class="h-20 mx-auto mb-4">
-                <h2 id="tech-name" class="text-xl font-bold text-white"></h2>
-                <div class="w-full bg-gray-300 rounded-full h-5 mt-4 relative">
-                    <div id="tech-progress" class="bg-blue-500 h-5 rounded-full"></div>
+            <!-- Skill Item: CSS -->
+            <div data-aos="flip-left"
+                class="group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/62/CSS3_logo.svg" alt="CSS"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="85, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">85%</div>
                 </div>
-                <p id="tech-percentage" class="text-lg font-semibold mt-2 text-white"></p>
-                <button class="mt-4 px-4 py-2 bg-red-500 text-white rounded-lg" onclick="closeModal()">Tutup</button>
+                <div class="absolute bottom-2 text-md font-semibold text-center">CSS</div>
+            </div>
+
+            <!-- Skill Item: JavaScript -->
+            <div data-aos="flip-left"
+                class="group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/6/6a/JavaScript-logo.png" alt="JavaScript"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="55, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">55%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">JavaScript</div>
+            </div>
+
+            <!-- Skill Item: Figma -->
+            <div data-aos="flip-left"
+                class="group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/3/33/Figma-logo.svg" alt="Figma"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="75, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">75%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">Figma</div>
+            </div>
+
+            <!-- Skill Item: Tailwind -->
+            <div data-aos="flip-left"
+                class="group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/d/d5/Tailwind_CSS_Logo.svg" alt="Tailwind"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="90, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">90%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">Tailwind</div>
+            </div>
+
+            <!-- Skill Item: Laravel -->
+            <div
+                class="mt-28 group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/9/9a/Laravel.svg" alt="Laravel"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="35, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">35%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">Laravel</div>
+            </div>
+
+            <!-- Skill Item: Python -->
+            <div
+                class="mt-28 group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/c/c3/Python-logo-notext.svg" alt="Python"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="4, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">4%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">Python</div>
+            </div>
+
+            <!-- Skill Item: Framer -->
+            <div
+                class="mt-28 group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://cdn.hackr.io/uploads/topics/1523426964BUP8FRPLRX.png" alt="Framer"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="47, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">47%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">Framer</div>
+            </div>
+
+            <!-- Skill Item: React -->
+            <div
+                class="mt-28 group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px] flex flex-col items-center justify-center overflow-visible relative transition-all duration-300 transform group-hover:scale-125">
+                <img src="https://upload.wikimedia.org/wikipedia/commons/a/a7/React-icon.svg" alt="React"
+                    class="w-24 h-24 transition-opacity duration-300 group-hover:opacity-0 absolute" />
+                <div class="opacity-0 group-hover:opacity-100 transition-opacity duration-300 absolute">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute top-0 left-0 w-full h-full transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="1, 100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1 text-center">1%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold text-center">React</div>
+            </div>
+
+            <!-- Canva -->
+            <div
+                class="mt-28 group w-[120px] h-[120px] bg-black border-2 border-[#ff4500] rounded-[15px]
+                        flex items-center justify-center relative transition-transform duration-300 transform group-hover:scale-125 overflow-visible">
+                <img src="https://images-eds-ssl.xboxlive.com/image?url=4rt9.lXDC4H_93laV1_eHHFT949fUipzkiFOBH3fAiZZUCdYojwUyX2aTonS1aIwMrx6NUIsHfUHSLzjGJFxxo4K81Ei7WzcnqEk8W.MgwbTd_YqcrKt3ED_2JioHRslZyvQSJ7Ptwb0.k9awp_ldXhvqCsS38auQNzE.3mKc9U-&format=source"
+                    alt="Canva" class="w-24 h-24 absolute transition-opacity duration-300 group-hover:opacity-0" />
+                <div
+                    class="opacity-0 group-hover:opacity-100 absolute transition-opacity duration-300 flex flex-col items-center">
+                    <div class="relative w-28 h-28">
+                        <svg class="absolute inset-0 transform -rotate-90" viewBox="0 0 36 36">
+                            <path class="stroke-gray-300" stroke-width="4" fill="none"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                            <path class="stroke-[#ff4500]" stroke-width="4" fill="none" stroke-dasharray="55,100"
+                                d="M18 2.0845 a 15.9155 15.9155 0 0 1 0 31.831 a 15.9155 15.9155 0 0 1 0 -31.831" />
+                        </svg>
+                    </div>
+                    <div class="text-white text-md font-semibold mt-1">55%</div>
+                </div>
+                <div class="absolute bottom-2 text-md font-semibold">Canva</div>
             </div>
         </div>
     </section>
 
     <!-- Portofolio -->
-    <section id="portofolio" class="pt-10 pl-[1%] mt-48">
-        <h2
+    <section id="portofolio" class="pt-10 pl-[1%] mt-20">
+        <h2 data-aos="fade-down" data-aos-easing="linear" data-aos-duration="250"
             class="text-6xl font-bold mb-9 relative inline-block after:block after:h-[6px] after:w-[200px] after:bg-[#ff4500] after:mx-auto after:mt-3 after:rounded-full text-center w-full mt-[75px]">
             Portofolio
         </h2>
@@ -337,15 +430,9 @@
                 </div>
             </div>
         </div>
-
-        <p class="text-[2rem] font-bold leading-relaxed max-w-[1100px] mx-auto mb-7 mt-10 text-center">
-            Pengalaman yang telah saya peroleh selama di SMK Madintul Quran, saya siap untuk terus berkembang dan
-            menghadirkan solusi kreatif di dunia desain dan pengembangan web. Saya percaya bahwa setiap karya yang saya
-            buat dapat memberikan manfaat dan nilai tambah bagi pengguna.
-        </p>
     </section>
 
-    <section id="contact" class="flex flex-col justify-center items-center min-h-screen">
+    <section id="contact" class="flex flex-col justify-center items-center min-h-screen mb-24">
         <div class="w-full text-center">
             <h2
                 class="text-6xl font-bold mb-[100px] relative inline-block after:block after:h-[6px] after:w-[220px] after:bg-[#ff4500] after:mx-auto after:mt-3 after:rounded-full">
@@ -353,30 +440,33 @@
             </h2>
         </div>
 
-        <div class="w-full max-w-5xl p-6 flex gap-5">
-            <div class="w-1/2 space-y-4">
-                <input type="text" placeholder="Full Name"
-                    class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
-                <input type="email" placeholder="Email"
-                    class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
-                <input type="tel" placeholder="Phone Number"
-                    class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
-                <input type="text" placeholder="Subject"
-                    class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
+        <form action="https://formspree.io/f/myzwylba" method="POST" class="w-full max-w-5xl p-6 space-y-6">
+            <!-- Bagian Input dan Textarea -->
+            <div class="flex flex-col md:flex-row gap-5">
+                <div class="w-full md:w-1/2 space-y-4">
+                    <input name="name" type="text" placeholder="Full Name"
+                        class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
+                    <input name="email" type="email" placeholder="Email"
+                        class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
+                    <input name="phone" type="tel" placeholder="Phone Number"
+                        class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
+                    <input name="subject" type="text" placeholder="Subject"
+                        class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-16">
+                </div>
+                <div class="w-full md:w-1/2">
+                    <textarea name="message" placeholder="Your Message"
+                        class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-full min-h-[150px]"></textarea>
+                </div>
             </div>
-            <div class="w-1/2">
-                <textarea placeholder="Your Message"
-                    class="w-full p-4 bg-transparent border border-[#ff4500] rounded-lg focus:outline-none focus:ring-2 focus:ring-[#ff4500] h-full"
-                    rows="8"></textarea>
-            </div>
-        </div>
 
-        <div class="flex justify-center mt-4">
-            <button type="submit"
-                class="px-8 py-4 text-lg bg-[#ff4500] text-white font-bold rounded-md hover:bg-[#e03d00] transition-shadow shadow-lg shadow-[#ff4500]/50">
-                Send Message
-            </button>
-        </div>
+            <!-- Tombol di Tengah -->
+            <div class="flex justify-center">
+                <button type="submit"
+                    class=" mt-20 px-8 py-4 text-lg bg-[#ff4500] font-bold rounded-md hover:bg-[#e03d00] transition-shadow shadow-lg shadow-[#ff4500]/50">
+                    Send Message
+                </button>
+            </div>
+        </form>
     </section>
 
     <div>
@@ -385,38 +475,38 @@
             <div class="absolute inset-0 bg-gradient-to-t from-black/20 via-black/40 to-[#080808] via-85%"></div>
             <div class="flex w-[80%] mx-auto justify-between flex-col gap-9 lg:flex-row relative z-10 p-6">
                 <div class="flex flex-col gap-8">
-                    <h3 class="text-5xl font-bold text-white">Kontak</h3>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <h3 class="text-5xl font-bold ">Kontak</h3>
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-brands fa-whatsapp"></i>
                         <p>+62 812 3456 7890</p>
                     </div>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-solid fa-envelope"></i>
                         <p>hilmi08zr@gmail.com</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-8">
-                    <h3 class="text-5xl font-bold text-white">Social Media</h3>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <h3 class="text-5xl font-bold ">Social Media</h3>
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-brands fa-instagram"></i>
                         <p>@azduhmen</p>
                     </div>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-brands fa-square-facebook"></i>
                         <p>azduhmen</p>
                     </div>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-brands fa-discord"></i>
                         <p>ikypo7740</p>
                     </div>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-brands fa-youtube"></i>
                         <p>azduhmen</p>
                     </div>
                 </div>
                 <div class="flex flex-col gap-8">
-                    <h3 class="text-5xl font-bold text-white">Location</h3>
-                    <div class="flex gap-4 items-center text-2xl text-white">
+                    <h3 class="text-5xl font-bold ">Location</h3>
+                    <div class="flex gap-4 items-center text-2xl ">
                         <i class="fa-solid fa-location-dot"></i>
                         <p>Cibalongsari, Kec. Klari, Karawang, Jawa Barat</p>
                     </div>
@@ -428,7 +518,7 @@
             </div>
         </section>
 
-        <footer class="text-center bg-[#080808] py-10 text-white text-2xl">
+        <footer class="text-center bg-[#080808] py-10  text-2xl">
             &copy; 2025 CV Hilmi Zaki Ramadhan. All rights reserved.
         </footer>
     </div>
@@ -441,6 +531,9 @@
     <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"
         integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw=="
         crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script>
+        AOS.init();
+    </script>
 </body>
 
 </html>
